@@ -1,0 +1,100 @@
+{
+  "UserlistDataEndSoft": [
+    {
+      "id": "1abc",
+      "first": "Rahul",
+      "dob": "1993-05-20",
+      "email": "rahul.kh@example.com",
+      "mobile": "9876543210",
+      "address": "123 Main St, Hyderabad, India"
+    },
+    {
+      "id": "2def",
+      "first": "Ankita",
+      "dob": "1992-07-12",
+      "email": "ankita.sh@example.com",
+      "mobile": "9123456789",
+      "address": "456 Park Ave, Bangalore, India"
+    },
+    {
+      "id": "3ghi",
+      "first": "Vikram",
+      "dob": "1990-11-05",
+      "email": "vikram.si@example.com",
+      "mobile": "8541235678",
+      "address": "789 Maple St, Pune, India"
+    },
+    {
+      "id": "4jkl",
+      "first": "Meera",
+      "dob": "1985-02-18",
+      "email": "meera.p@example.com",
+      "mobile": "9965321478",
+      "address": "321 Elm St, Mumbai, India"
+    },
+    {
+      "id": "5mno",
+      "first": "Raj",
+      "dob": "1988-06-09",
+      "email": "raj.ver@example.com",
+      "mobile": "7745120987",
+      "address": "654 Oak St, Chennai, India"
+    },
+    {
+      "id": "6pqr",
+      "first": "Sara",
+      "dob": "1995-03-14",
+      "email": "sara.kh@example.com",
+      "mobile": "8445120987",
+      "address": "987 Pine St, Ahmedabad, India"
+    },
+    {
+      "id": "7stu",
+      "first": "Neeraj",
+      "dob": "1989-09-22",
+      "email": "neeraj.de@example.com",
+      "mobile": "9551234876",
+      "address": "159 Birch St, Kolkata, India"
+    },
+    {
+      "id": "8vwx",
+      "first": "Sneha",
+      "dob": "1994-12-10",
+      "email": "sneha.ka@example.com",
+      "mobile": "9823145678",
+      "address": "753 Cedar St, Jaipur, India"
+    },
+    {
+      "id": "9yz1",
+      "first": "Amit",
+      "dob": "1987-04-04",
+      "email": "amit.ma@example.com",
+      "mobile": "8932415670",
+      "address": "852 Willow St, Surat, India"
+    },
+    {
+      "id": "10abc",
+      "first": "Ritika RR",
+      "dob": "1996-08-22",
+      "email": "ritika.me@example.com",
+      "mobile": "8765120987 77",
+      "address": "246 Fir St, Nagpur, India"
+    },
+    {
+      "first": " ",
+      "address": "  ",
+      "dob": "275760-03-31",
+      "email": "Restorm@gmailcom",
+      "mobile": "666",
+      "id": "aba4"
+    },
+    {
+      "id": "d18c",
+      "first": "Shivam",
+      "address": "tttttttt",
+      "dob": "2024-10-11",
+      "email": "jjjjj",
+      "mobile": "   5555555555555555"
+    }
+  ]
+}

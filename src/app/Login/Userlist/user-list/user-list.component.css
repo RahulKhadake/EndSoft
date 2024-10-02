@@ -1,0 +1,32 @@
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1; /* Light gray on hover */
+}
+
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+th {
+    font-size: 1.1rem; /* Slightly larger font for table headers */
+}
+
+td {
+    font-size: 1rem; /* Regular font size for table data */
+}
+
+@media (max-width: 576px) {
+    .btn-group {
+        width: 100%;  /* Makes buttons full width on small screens */
+        display: flex;
+        flex-direction: column;  /* Stack buttons vertically */
+    }
+  }
+  

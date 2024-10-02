@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+        <h6 class="mt-4 mb-4 text-primary flex-grow-1 text-center mb-0">{{ isEdit ? 'Edit Employee' : 'Add Employee' }}</h6>
+        <span class="Close_icon" (click)="CloseDialog()" style="cursor: pointer;">
+            <i class="fa-solid fa-xmark"></i>
+        </span>
+    </div>
+    
+
+    <div class="card p-4 shadow-sm rounded">
+        <form [formGroup]="Userforms" (ngSubmit)="SaveData()" class="row g-3">
+            <div class="col-12">
+                <label for="first" class="form-label">First Name</label>
+                <input type="text" id="first" placeholder="Enter your first name" name="first" formControlName="first" class="form-control" required>
+                <small *ngIf="Userforms.get('first')?.hasError('required') && Userforms.get('first')?.touched">
+                    <span class="text-danger">First name is required</span> 
+                </small>
+                
+            </div>
+
+            <div class="col-12">
+                <label for="last" class="form-label">Address</label>
+                <input type="text" id="address" placeholder="Enter your address" name="address" formControlName="address" class="form-control" required>
+                <small *ngIf="Userforms.get('address')?.hasError('required') && Userforms.get('address')?.touched">
+                    <span class="text-danger">address is required</span>  
+                </small>
+            </div>
+
+            <div class="col-12">
+                <label for="mobile" class="form-label">Mobile No</label>
+                <input type="number" id="mobile" minlength="10"
+                maxlength="10" placeholder="Enter your mobile number" name="mobile" formControlName="mobile" class="form-control" required>
+                <small *ngIf="Userforms.get('mobile')?.hasError('required') && Userforms.get('mobile')?.touched">
+                    <span class="text-danger">Mobile number is required</span>
+                </small>
+                <small *ngIf="Userforms.get('mobile')?.hasError('pattern') && Userforms.get('mobile')?.touched">
+                    <span class="text-danger">Mobile number must be exactly 10 digits</span>
+                  </small>
+                
+            </div>
+
+            <div class="col-12">
+                <label for="email" class="form-label">Email Id</label>
+                <input type="email" id="email" placeholder="Enter your email id" name="email" formControlName="email" class="form-control" required>
+                <small *ngIf="Userforms.get('email')?.hasError('required') && Userforms.get('email')?.touched">
+                    <span class="text-danger">Email is required</span>
+                </small>
+                <small *ngIf="Userforms.get('email')?.hasError('pattern') && Userforms.get('email')?.touched">
+                    <span class="text-danger">Please enter a valid email address</span>
+                </small>
+            </div>
+
+            <div class="col-12">
+                <label for="dob" class="form-label">DOB</label>
+                <input type="date" id="dob" placeholder="Enter your DOB" name="dob" formControlName="dob" class="form-control" required>
+                <small *ngIf="Userforms.get('dob')?.hasError('required') && Userforms.get('dob')?.touched">
+                    <span class="text-danger">DOB is required</span>
+                </small>
+                <small *ngIf="Userforms.get('dob')?.hasError('pattern') && Userforms.get('dob')?.touched">
+                    <span class="text-danger">Please enter a valid date (DD-MM-YYYY)</span>
+                </small>
+            </div>
+
+            <div class="col-12 text-center">
+                <button class="btn btn-primary mt-4 w-50" [disabled]="Userforms.invalid">
+                    {{ isEdit ? 'Update Employee' : 'Add Employee' }}
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
