@@ -12,7 +12,7 @@ export const routes: Routes = [
   // Login page route
   { path: 'Login', component: LoginComponent, title: 'Login Page' },
    // Register page route (accessible without logging in)
-   { path: 'register', component: RegisterComponent, title: 'Register-Page',canActivate:[authGuard]},
+   { path: 'register', component: RegisterComponent, title: 'Register-Page'},
    { path: 'Userlistpage', component: UserListComponent, title: 'Userlist-Page',canActivate:[authGuard]},
 
    // Wildcard route for handling 404 (redirect to login if path not found)
